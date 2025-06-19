@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Dark background to create contrast */
+    color: #fff; /* White text for better visibility */
+}
+
+/* Header Styling */
+header {
+    background-image: url('C:/Users/kskhalsa/Favorites/Documents/chatgpt make website for practice/assets/contact/images/fire.jpg'); /* Fire-themed background image */
+    background-size: cover; /* Make the image cover the whole header */
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative; /* To allow overlay effect */
+     
+    
+}
+
+header::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherit the background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center;
+    filter: blur(5px); /* Apply blur effect to the pseudo-element */
+    z-index: -1; /* Keep the blur behind text */
+}
+
+
+header h1 {
+    font-size: 4rem;
+    color: #ff3300; /* Bright red color to represent fire */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    background-color: rgba(255, 51, 0, 0.8); /* Fire-like red background for links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 102, 0, 0.8); /* Lighter red on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    background-color: #222; /* Dark background to highlight content */
+    text-align: center;
+    color: #fff;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffcc00; /* Yellow color for urgency */
+}
+
+/* Action Button */
+.main-action-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff3300; /* Fire red */
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 6px 12px rgba(255, 51, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.main-action-btn:hover {
+    background-color: #ff6600; /* Lighter red */
+    box-shadow: 0px 10px 15px rgba(255, 102, 0, 0.8);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ff3300; /* Fire-like border color */
+    background-color: #333;
+}
+
+table caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Yellow for the caption */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ff3300; /* Matching border with fire color */
+}
+
+table th {
+    background-color: #ff3300; /* Red background for header */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #444;
+}
+
+table tr:nth-child(odd) {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #ffcc00; /* Fire yellow for footer text */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Smaller font size for smaller screens */
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .main-action-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    table {
+        width: 100%;
+    }
+}
