@@ -14,7 +14,7 @@ body {
 
 /* Header Styling */
 header {
-    background-image: url('C:/Users/kskhalsa/Favorites/Documents/chatgpt make website for practice/assets/contact/images/fire.jpg'); /* Fire-themed background image */
+    background-image: url('fire.jpg'); /* Fire-themed background image */
     background-size: cover; /* Make the image cover the whole header */
     background-position: center;
     color: white;
